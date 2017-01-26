@@ -1,0 +1,19 @@
+<h1>
+  {{title}}
+</h1>
+<button (click)="fetchDataByPromise()">Fetch using Promise</button>
+
+<div>
+  <ul>
+    <li *ngFor="let user of users1">{{user.id}}. {{user.name}}</li>
+  </ul>
+</div>
+
+<button (click)="fetchDataByObservable()">Fetch using Observable</button>
+
+<div>
+  <ul>
+    <li *ngFor="let user of users2">{{user.id}}. {{user.name}}, {{user.website}}</li>
+    <!--added extra field just show difference -->
+  </ul>
+</div>
